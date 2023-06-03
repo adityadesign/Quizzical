@@ -1,0 +1,143 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+  background-color: #F5F7FB;
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #293264;
+  height: 100vh;
+}
+
+.hero > h1{
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero > p{
+  margin: 1rem 0 2rem;
+}
+
+.hero > button{
+  border: none;
+  background-color: #4D5B9E;
+  border-radius: 15px;
+  padding: 1rem 4rem;
+  font-weight: 500;
+  color: #F5F7FB;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hero > button:hover, .submit:hover{
+  background-color: #5c6dc1;
+}
+
+.designOne{
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  width: 40vw;
+  height: 30vh;
+  max-width: 300px;
+  z-index: -1;
+}
+
+.designTwo{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40vw;
+  height: 30vh;
+  max-width: 300px;
+  z-index: -1;
+}
+.quizBody{
+  position: relative;
+}
+.quizMain{
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px 0;
+  color: #293264;
+}
+
+.quizElements{
+  border-bottom: 1px solid #DBDEF0;
+}
+
+.quizQuestion{
+  font-weight: 700;
+  margin: 3.5vh 0 3vh;
+}
+
+.quizAnswer{
+  margin-bottom: 3.5vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.individualAnswer{
+  border: 1.6px solid #4D5B9E;
+  padding: 4px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.individualAnswer:hover{
+  background-color: #D6DBF5;
+  border: none;
+  border: 1.6px solid #D6DBF5;
+}
+
+.checked{
+  background-color: #D6DBF5;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.btnQuiz{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin-top: 30px;
+  align-items: center;
+  gap: 1rem;
+}
+
+.submit{
+  width: 140px;
+  height: 40px;
+  background-color: #4D5B9E;
+  color: #F5F7FB;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.displayScore{
+  font-weight: 500;
+}
+.correct{
+  background-color: #94D7A2;
+}
+.incorrect{
+  background-color: #F8BCBC;
+}
